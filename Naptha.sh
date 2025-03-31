@@ -28,7 +28,7 @@ display_header() {
     echo -e "${BLUE}=======================================================${NC}"
     echo -e "${GREEN}            🚀 Naptha Node Management 🚀${NC}"
     echo -e "${BLUE}=======================================================${NC}"
-    echo -e "${CYAN}    🌐 Telegram: @CryptoAirdropHindi${NC}"
+    echo -e "${CYAN}    🌐  Telegram: @CryptoAirdropHindi${NC}"
     echo -e "${CYAN}    📺  YouTube:  @CryptoAirdropHindi6${NC}"
     echo -e "${CYAN}    💻  GitHub:   github.com/CryptoAirdropHindi${NC}"
     echo -e "${BLUE}=======================================================${NC}"
