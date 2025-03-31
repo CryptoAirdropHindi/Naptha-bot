@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 set -e  # Exit immediately if any command fails
@@ -13,36 +12,42 @@ MAGENTA='\e[35m'
 NC='\e[0m'  # No Color
 RESET='\e[0m'
 
-
 # Script save path
 SCRIPT_PATH="$HOME/naptha.sh"
 
 # Display header
 display_header() {
-        clear
-        echo -e "${CYAN}"
-        echo -e "    ${RED}██╗  ██╗ █████╗ ███████╗ █████╗ ███╗   ██╗${NC}"
-        echo -e "    ${GREEN}██║  ██║██╔══██╗██╔════╝██╔══██╗████╗  ██║${NC}"
-        echo -e "    ${BLUE}███████║███████║███████╗███████║██╔██╗ ██║${NC}"
-        echo -e "    ${YELLOW}██╔══██║██╔══██║╚════██║██╔══██║██║╚██╗██║${NC}"
-        echo -e "    ${MAGENTA}██║  ██║██║  ██║███████║██║  ██║██║ ╚████║${NC}"
-        echo -e "    ${CYAN}╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝${NC}"
-        echo -e "${BLUE}=======================================================${NC}"
-        echo -e "${GREEN}            🚀 Naptha Node Management 🚀${NC}"
-        echo -e "${BLUE}=======================================================${NC}"
-        echo -e "${CYAN}    🌐 Telegram: @CryptoAirdropHindi${NC}"
-        echo -e "${CYAN}    📺  YouTube:  @CryptoAirdropHindi6${NC}"
-        echo -e "${CYAN}    💻  GitHub:   github.com/CryptoAirdropHindi${NC}"
-        echo -e "${BLUE}=======================================================${NC}"
-        echo -e "${YELLOW}       The most advanced node management system${NC}"
-        echo "================================================================"
-        echo "To exit the script, press Ctrl + C"
-        echo "Please select an operation:"
-        echo "1. Install Naptha Node"
-        echo "2. Remove Naptha Node"  
-        echo "3. View PRIVATE_KEY"   
-        echo "4. View Logs" 
-        echo "5. Exit Script"
+    clear
+    echo -e "${CYAN}"
+    echo -e "    ${RED}██╗  ██╗ █████╗ ███████╗ █████╗ ███╗   ██╗${NC}"
+    echo -e "    ${GREEN}██║  ██║██╔══██╗██╔════╝██╔══██╗████╗  ██║${NC}"
+    echo -e "    ${BLUE}███████║███████║███████╗███████║██╔██╗ ██║${NC}"
+    echo -e "    ${YELLOW}██╔══██║██╔══██║╚════██║██╔══██║██║╚██╗██║${NC}"
+    echo -e "    ${MAGENTA}██║  ██║██║  ██║███████║██║  ██║██║ ╚████║${NC}"
+    echo -e "    ${CYAN}╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝${NC}"
+    echo -e "${BLUE}=======================================================${NC}"
+    echo -e "${GREEN}            🚀 Naptha Node Management 🚀${NC}"
+    echo -e "${BLUE}=======================================================${NC}"
+    echo -e "${CYAN}    🌐 Telegram: @CryptoAirdropHindi${NC}"
+    echo -e "${CYAN}    📺  YouTube:  @CryptoAirdropHindi6${NC}"
+    echo -e "${CYAN}    💻  GitHub:   github.com/CryptoAirdropHindi${NC}"
+    echo -e "${BLUE}=======================================================${NC}"
+    echo -e "${YELLOW}       The most advanced node management system${NC}"
+    echo "================================================================"
+    echo "To exit the script, press Ctrl + C"
+    echo "Please select an operation:"
+    echo "1. Install Naptha Node"
+    echo "2. Remove Naptha Node"  
+    echo "3. View PRIVATE_KEY"   
+    echo "4. View Logs" 
+    echo "5. Exit Script"
+}
+
+# Main menu function
+main_menu() {
+    while true; do
+        # Display header and prompt for option selection
+        display_header
         read -p "Enter option number: " option
 
         case $option in
